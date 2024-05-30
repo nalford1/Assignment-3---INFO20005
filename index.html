@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang "en">
+    <head>
+        <meta charset=" = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+        <script src="https://kit.fontawesome.com/51edb5d0cb.js" crossorigin="anonymous"></script>
+        <link rel = "stylesheet" href = "layout.css">
+        <link rel = "stylesheet" href = "typography.css">
+        <link rel = "stylesheet" href = "colours.css">
+        <script src = "main.js"></script>
+        <title>Games We Played</title>
+    </head>
+    <body>
+        <header>
+            <nav id = "navBar">
+                <!--Logo in the top left corner-->
+                <a href = "#home"><img src = "GWP-Logo.png" alt = "Logo" class = "logo"></a>
+                
+                <!--Search bar-->
+                <section class = "searchBar">
+                    <input type = "text" name = "searchBar" placeholder = "Search..." class = "searchBar">
+                    <button class = "searchButton">
+                        <i class = "fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <button class = "menuButton">
+                        <i class = "fa-solid fa-bars"></i>
+                    </button>
+                </section>
+
+                <!--Top right with login and cart buttons-->
+                <section class = "loginCart">
+                        <i class = "fa-regular fa-user"></i>
+                    <a href = "cart">
+                        <i class = "fa-solid fa-cart-shopping"></i>
+                    </a>
+                </section>
+            </nav>
+
+        </header>
+
+        <main>
+            <!--Home page-->
+            <section id = "home">
+                <!--Categories bar underneath the nav bar-->
+                <section class = "categoryBar">
+                    <button class = "category">
+                        ACCESSORIES
+                        <i class = "fa-solid fa-angle-down" ></i>
+                    </button>
+                    <button class = "category">
+                        RETRO GAMES
+                        <i class = "fa-solid fa-angle-down" ></i>
+                    </button>
+                    <button class = "category">
+                        CONTROLLERS
+                        <i class = "fa-solid fa-angle-down" ></i>
+                    </button>
+                    <button class = "category">
+                        CONSOLES
+                        <i class = "fa-solid fa-angle-down" ></i>
+                    </button>
+                </section>
+                
+                <!--Banner of logo-->
+                <div id = "bannerimage">
+                    <img src = "GWP-BannerImage.png" alt = "Banner" class = "banner">
+                </div>
+                <!-- Best sellers section with three best seller products-->
+                <section class = "bestSellers">
+                    <h1 class = "pageTitle">BEST SELLERS</h1>
+                    <section class = "productOne">
+                        <img src = "DualShockController.png" alt = "Dualshock XBOX Controller" class = "product">
+                        <h2 class = "productName">Dualshock XBOX Controller</h2>
+                        <h2 class = "price">$84.90</h2>
+                        <button class = "add">Add to cart</button>
+                    </section>
+                    <section class = "productTwo">
+                        <img src = "nintendoSwitchDock.png" alt = "Nintendo Switch Dock" class = "product">
+                        <h2 class = "productName">Nintendo Switch Dock</h2>
+                        <h2 class = "price">$29.90</h2>
+                        <button class = "add">Add to cart</button>
+                    </section>
+                    <section class = "productThree">
+                        <img src = "PlayStationConsole.png" alt = "PlayStation One Console" class = "product">
+                        <h2 class = "productName">PlayStation One Console</h2>
+                        <h2 class = "price">149.90</h2>
+                        <button class = "add">Add to cart</button>
+                    </section>
+                </section>
+                <!--Scrolling review bar-->
+                <div class = "reviewBar">
+                    <ul>
+                        <li>
+                            "I love Games We Played!" - Zak J, NSW
+                        </li>
+                        <li>
+                            "I love this website so much!!!!! It is my favourite place to find gaming goods!" - George M, TAS
+                        </li>
+                        <li>
+                            "I bought the best game" - Emma L, VIC
+                        </li>
+                        <li>
+                            "The best, best, best gaming products site ever" - Milli H, VIC
+                        </li>
+                    </ul>
+                </div>
+                <!--Top Collections Section-->
+                <section class = "topCollections">
+                    <h1>TOP COLLECTIONS</h1>
+                    <a>
+                        <img src = "GWP-Accessories.png" alt = "Accessory" class = "collection">
+                    </a>
+                    <a>
+                        <img src = "GWP-RetroGames.png" alt = "Retro Games" class = "collection">
+                    </a>
+                    <a>
+                        <img src = "GWP-Controllers.png" alt = "Controllers" class = "collection">
+                    </a>
+                </section>
+
+                <!--Language Icon on every page-->
+                <button>
+                    <img src = "LanguageIcon.png" alt = "Language" class = "languageIcon">
+                </button>
+            </section>
+
+            <section id = "playstationOneGames">
+                <!--Search Results banner-->
+                <section class = "searchResults">
+                    <span class = "searchTitle">
+                        <i class = "fa-solid fa-angle-left"></i>
+                        <h1>SEARCH RESULTS: PlayStation 1 Games</h1>
+                        <i class = "fa-solid fa-filter"></i>
+                    </span>
+                </section>
+
+                <!--Products Results listed-->
+                <section class = "productResults">
+                    <section class = "productOne">
+                        <img src = "DualShockController.png" alt = "Dualshock XBOX Controller" class = "product">
+                        <h2 class = "productName">Dualshock XBOX Controller</h2>
+                        <h2 class = "price">$84.90</h2>
+                        <button class = "add">Add to cart</button>
+                    </section>
+                    <section class = "productTwo">
+                        <img src = "nintendoSwitchDock.png" alt = "Nintendo Switch Dock" class = "product">
+                        <h2 class = "productName">Nintendo Switch Dock</h2>
+                        <h2 class = "price">$29.90</h2>
+                        <button class = "add">Add to cart</button>
+                    </section>
+                    <section class = "productThree">
+                        <img src = "PlayStationConsole.png" alt = "PlayStation One Console" class = "product">
+                        <h2 class = "productName">PlayStation One Console</h2>
+                        <h2 class = "price">149.90</h2>
+                        <button class = "add">Add to cart</button>
+                    </section>
+                </section>
+
+                <section class = "productResults">
+
+                </section>
+
+
+            
+            </section>
+        
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>
