@@ -1,0 +1,36 @@
+.reviewBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-family: "Ariel", sans-serif;
+    box-shadow: 0 4px 8px -4px rgba(0,0,0,0.3);
+}
+
+.reviewBar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    /* animation for 40s, infinite and constant speed*/
+    animation: scroll 25s infinite linear;
+}
+
+.reviewBar ul li {
+    /* set so reviews do not wrap and on single line*/
+    white-space: nowrap;
+    padding: 10px 24px;
+    color: #494949;
+    position: relative;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-127%)
+    }
+}
+
+
+
