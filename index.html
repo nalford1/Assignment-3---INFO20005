@@ -14,25 +14,33 @@
         <header>
             <nav id = "navBar">
                 <!--Logo in the top left corner-->
-                <a href = "#home"><img src = "GWP-Logo.png" alt = "Logo" class = "logo"></a>
+                <div class = "logoContainer">
+                    <a href = "#home"><img src = "GWP-Logo.png" alt = "Logo" class = "logo"></a>
+                </div>
                 
                 <!--Search bar-->
-                <section class = "searchBar">
+                <section class = "searchBarArea">
                     <input type = "text" name = "searchBar" placeholder = "Search..." class = "searchBar">
-                    <button class = "searchButton">
-                        <i class = "fa-solid fa-magnifying-glass"></i>
-                    </button>
-                    <button class = "menuButton">
-                        <i class = "fa-solid fa-bars"></i>
-                    </button>
+                    <section class = "searchMenuIcons">
+                        <button class = "searchButton">
+                            <i class = "fa-solid fa-magnifying-glass"></i>
+                        </button>
+                        <button class = "menuButton">
+                            <i class = "fa-solid fa-bars"></i>
+                        </button>
+                    </section>
                 </section>
 
                 <!--Top right with login and cart buttons-->
                 <section class = "loginCart">
+                    <button class = "loginButton">
                         <i class = "fa-regular fa-user"></i>
-                    <a href = "cart">
-                        <i class = "fa-solid fa-cart-shopping"></i>
-                    </a>
+                    </button>
+                    <button class = "cartButton">
+                        <a href = "cart">
+                            <i class = "fa-solid fa-cart-shopping"></i>
+                        </a>
+                    </button>
                 </section>
             </nav>
 
@@ -43,49 +51,61 @@
             <section id = "home">
                 <!--Categories bar underneath the nav bar-->
                 <section class = "categoryBar">
-                    <button class = "category">
-                        ACCESSORIES
-                        <i class = "fa-solid fa-angle-down" ></i>
-                    </button>
-                    <button class = "category">
-                        RETRO GAMES
-                        <i class = "fa-solid fa-angle-down" ></i>
-                    </button>
-                    <button class = "category">
-                        CONTROLLERS
-                        <i class = "fa-solid fa-angle-down" ></i>
-                    </button>
-                    <button class = "category">
-                        CONSOLES
-                        <i class = "fa-solid fa-angle-down" ></i>
-                    </button>
+                    <div class = "categories">
+                        <h2 class = "category">ACCESSORIES</h2>
+                        <button class = "downArrow">
+                            <i class = "fa-solid fa-angle-down" ></i>
+                        </button>
+                    </div>
+                    <div class = "categories">
+                        <h2 class = "category">RETRO GAMES</h2>
+                        <button class = "downArrow">
+                            <i class = "fa-solid fa-angle-down" ></i>
+                        </button>
+                    </div>
+                    <div class = "categories">
+                        <h2 class = "category">CONTROLLERS</h2>
+                        <button class = "downArrow">
+                            <i class = "fa-solid fa-angle-down" ></i>
+                        </button>
+                    </div>
+                    <div class = "categories">
+                        <h2 class = "category">CONSOLES</h2>
+                        <button class = "downArrow">
+                            <i class = "fa-solid fa-angle-down" ></i>
+                        </button>
+                    </div>
                 </section>
                 
                 <!--Banner of logo-->
-                <div id = "bannerimage">
+                <div class = "bannerImage">
                     <img src = "GWP-BannerImage.png" alt = "Banner" class = "banner">
                 </div>
+
                 <!-- Best sellers section with three best seller products-->
                 <section class = "bestSellers">
                     <h1 class = "pageTitle">BEST SELLERS</h1>
-                    <section class = "productOne">
-                        <img src = "DualShockController.png" alt = "Dualshock XBOX Controller" class = "product">
-                        <h2 class = "productName">Dualshock XBOX Controller</h2>
-                        <h2 class = "price">$84.90</h2>
-                        <button class = "add">Add to cart</button>
-                    </section>
-                    <section class = "productTwo">
-                        <img src = "nintendoSwitchDock.png" alt = "Nintendo Switch Dock" class = "product">
-                        <h2 class = "productName">Nintendo Switch Dock</h2>
-                        <h2 class = "price">$29.90</h2>
-                        <button class = "add">Add to cart</button>
-                    </section>
-                    <section class = "productThree">
-                        <img src = "PlayStationConsole.png" alt = "PlayStation One Console" class = "product">
-                        <h2 class = "productName">PlayStation One Console</h2>
-                        <h2 class = "price">149.90</h2>
-                        <button class = "add">Add to cart</button>
-                    </section>
+                    <div class = "break"></div>
+                    <div class = "featuredProducts">
+                        <article class = "featuredProduct">
+                            <img src = "XBOX-Controller.png" alt = "Dualshock XBOX Controller" class = "featuredProductImage">
+                            <h2 class = "productName">Dualshock XBOX Controller</h2>
+                            <h2 class = "price">$84.90</h2>
+                            <button class = "add">Add to cart</button>
+                        </article>
+                        <article class = "featuredProduct">
+                            <img src = "Nintendo-Switch-Dock.png" alt = "Nintendo Switch Dock" class = "featuredProductImage">
+                            <h2 class = "productName">Nintendo Switch Dock</h2>
+                            <h2 class = "price">$29.90</h2>
+                            <button class = "add">Add to cart</button>
+                        </article>
+                        <article class = "featuredProduct">
+                            <img src = "PlayStation1-Console.png" alt = "PlayStation One Console" class = "featuredProductImage">
+                            <h2 class = "productName">PlayStation One Console</h2>
+                            <h2 class = "price">149.90</h2>
+                            <button class = "add">Add to cart</button>
+                        </article>
+                    </div>
                 </section>
                 <!--Scrolling review bar-->
                 <div class = "reviewBar">
@@ -134,34 +154,318 @@
                     </span>
                 </section>
 
-                <!--Products Results listed-->
+                <!--6 Products Results listed-->
                 <section class = "productResults">
-                    <section class = "productOne">
-                        <img src = "DualShockController.png" alt = "Dualshock XBOX Controller" class = "product">
-                        <h2 class = "productName">Dualshock XBOX Controller</h2>
-                        <h2 class = "price">$84.90</h2>
+                    <article class = "product">
+                        <img src = "Monopoly.png" alt = "Monopoly PS1 Game" class = "productImage">
+                        <h2 class = "productName">Monopoly PS1 Game</h2>
+                        <h2 class = "price">$19.90</h2>
                         <button class = "add">Add to cart</button>
-                    </section>
-                    <section class = "productTwo">
-                        <img src = "nintendoSwitchDock.png" alt = "Nintendo Switch Dock" class = "product">
-                        <h2 class = "productName">Nintendo Switch Dock</h2>
+                    </article>
+                    <article class = "product">
+                        <img src = "Chessmaster.png" alt = "Chessmaster II PS1 Game" class = "productImage">
+                        <h2 class = "productName">Chessmaster II PS1 Game</h2>
                         <h2 class = "price">$29.90</h2>
                         <button class = "add">Add to cart</button>
-                    </section>
-                    <section class = "productThree">
-                        <img src = "PlayStationConsole.png" alt = "PlayStation One Console" class = "product">
-                        <h2 class = "productName">PlayStation One Console</h2>
-                        <h2 class = "price">149.90</h2>
+                    </article>
+                    <article class = "product">
+                        <img src = "StuartLittle.png" alt = "Stuart Little 2 PS1 Game" class = "productImage">
+                        <h2 class = "productName">Stuart Little 2 PS1 Game</h2>
+                        <h2 class = "price">$24.90</h2>
                         <button class = "add">Add to cart</button>
+                    </article>
+                    <article class = "product">
+                        <img src = "DancingStage.png" alt = "Dancing Stage Party Edition PS1" class = "productImage">
+                        <h2 class = "productName">Dancing Stage Party Edition PS1</h2>
+                        <h2 class = "price">$19.90</h2>
+                        <button class = "add">Add to cart</button>
+                    </article>
+                    <article class = "product">
+                        <img src = "Rayman.png" alt = "Rayman PS1 Game" class = "productImage">
+                        <h2 class = "productName">Rayman PS1 Game</h2>
+                        <h2 class = "price">$26.99</h2>
+                        <button class = "add">Add to cart</button>
+                    </article>
+                    <article class = "product">
+                        <img src = "CrashBandicoot.png" alt = "Crash Bandicoot PS1" class = "productImage">
+                        <h2 class = "productName">Crash Bandicoot PS1</h2>
+                        <h2 class = "price">$130.60</h2>
+                        <button class = "add">Add to cart</button>
+                    </article>
+                </section>
+
+                <!--load more button-->
+                <button class = "more">
+                    <i class = "fa-solid fa-angle-down" ></i>
+                </button>
+
+                <!--Related Products Section-->
+                <section class = "relatedProducts">
+                    <h1 class = "pageTitle">RELATED PRODUCTS...</h1>
+                    <article class = "relatedProduct">
+                        <img src = "PS1Console.png" alt = "PS1 Console and Controller" class = "relatedProductImage">
+                        <h2 class = "productName">PS1 Console and Controller</h2>
+                        <h2 class = "price">$149.90</h2>
+                        <button class = "add">Add to cart</button>
+                    </article>
+                    <article class = "relatedProduct">
+                        <img src = "DualShockPS1.png" alt = "PS1 Dualshock Controller" class = "relatedProductImage">
+                        <h2 class = "productName">PS1 Dualshock Controller</h2>
+                        <h2 class = "price">$59.99</h2>
+                        <button class = "add">Add to cart</button>
+                    </article>
+                    <article class = "relatedProduct">
+                        <img src = "BlackController.png" alt = "Black Sony PS1 Controller" class = "relatedProductImage">
+                        <h2 class = "productName">Black Sony PS1 Controller</h2>
+                        <h2 class = "price">$49.90</h2>
+                        <button class = "add">Add to cart</button>
+                    </article>
+                </section>
+
+                <!--Language Icon on every page-->
+                <button>
+                    <img src = "LanguageIcon.png" alt = "Language" class = "languageIcon">
+                </button>
+            </section>
+
+            <!--Monopoly product page-->
+            <section id = "monopolyPage">
+                <section class = "bannerTitle">
+                    <span class = "pageTitle">
+                        <i class = "fa-solid fa-angle-left"></i>
+                    </span>
+                </section>
+
+                <!--Desktop version of product-->
+                
+                <section class = "informationContainer">
+                    <div class="carousel">
+                        <button class = "buttonCarousel buttonCarouselLeft">
+                            <i class = "fa-solid fa-angle-left"></i>
+                        </button>
+                        <div class = "carouselContainer">
+                            <ul class="carouselList">
+                                <li class="carouselSlide">
+                                    <img src = "MonopolyFull.png" alt = "Monopoly PS1 Game Full Set" class = "monopolyImage">
+                                </li>
+                                <li class="carouselSlide">
+                                    <img src = "Monopoly.png" alt = "Monopoly PS1 Game" class = "monopolyImage">
+                                </li>
+                                <li class="carouselSlide">
+                                    <img src = "MonopolyBack.png" alt = "Monopoly PS1 Game Back" class = "monopolyImage">
+                                </li>
+                            </ul>
+                        </div>
+                        <button class = "buttonCarousel buttonCarouselRight">
+                            <i class = "fa-solid fa-angle-right"></i>
+                        </button>
+                        <div class="carouselNavigation">
+                            <button class = "indicator currentSlide"></button>
+                            <button class = "indicator"></button>
+                            <button class = "indicator"></button>
+                        </div>
+                    </div>
+                </section>
+
+                <!--Price information-->
+                <section class = "priceInfo">
+                    <h2 class = "price">$149.90</h2>
+                    <button class = "addProduct">Add to cart</button>
+                    <table>
+                        <tr>
+                            <th>1</th>
+                            <th>
+                                <i class = "fa-solid fa-angle-down"></i>
+                            </th>
+                        </tr>
+                    </table>
+                </section>
+
+                <!--Reviews-->
+                <section class = "Reviews">
+                    <p>
+                        Great game
+                        Disc Condition: Very Good
+                        Case Condition: Good
+                        Manual: Yes
+                        Cover Art: Yes
+                        See pics for more details
+                        All tested and works well.
+                    </p>
+                    <section class = "starRating">
+                        <i class = "fa-solid fa-star"></i>
+                        <i class = "fa-solid fa-star"></i>
+                        <i class = "fa-solid fa-star"></i>
+                        <i class = "fa-solid fa-star"></i>
+                        <i class = "fa-regular fa-star"></i>
+                    </section>
+                    <section class = "seeMore">
+                        <h3>See more </h3>
+                        <i class = "fa-solid fa-angle-down"></i>
                     </section>
                 </section>
 
-                <section class = "productResults">
+                <!--Related products section-->
+                <section class = "relatedProducts">
+                    <h1 class = "pageTitle">RELATED PRODUCTS...</h1>
+                    <article class = "relatedProduct">
+                        <img src = "PS1Console.png" alt = "PS1 Console and Controller" class = "relatedProductImage">
+                        <h2 class = "productName">PS1 Console and Controller</h2>
+                        <h2 class = "price">$149.90</h2>
+                        <button class = "add">Add to cart</button>
+                    </article>
+                    <article class = "relatedProduct">
+                        <img src = "DualShockPS1.png" alt = "PS1 Dualshock Controller" class = "relatedProductImage">
+                        <h2 class = "productName">PS1 Dualshock Controller</h2>
+                        <h2 class = "price">$59.99</h2>
+                        <button class = "add">Add to cart</button>
+                    </article>
+                    <article class = "relatedProduct">
+                        <img src = "BlackController.png" alt = "Black Sony PS1 Controller" class = "relatedProductImage">
+                        <h2 class = "productName">Black Sony PS1 Controller</h2>
+                        <h2 class = "price">$49.90</h2>
+                        <button class = "add">Add to cart</button>
+                    </article>
+                </section>
+            </section>
+            <!--Language Icon on every page-->
+            <button>
+                <img src = "LanguageIcon.png" alt = "Language" class = "languageIcon">
+            </button>
 
+            <!--Cart-->
+            <section id = "cart">
+
+                <section class = "bannerTitle">
+                    <span class = "pageTitle">
+                        <i class = "fa-solid fa-angle-left"></i>
+                        <h1>YOUR CART</h1>
+                    </span>
                 </section>
 
+                <section class = "cartPrice">
+                    <span class = "total">
+                        <h2>Total: $49.80</h2>
+                    </span>
+                    <button class = "checkout">
+                        <h2>Checkout</h2>
+                    </button>
+                </section>
+                <section class = "cartProducts">
+                    <article class = "product">
+                        <h2 class = "productName">Monopoly PS1 Game</h2>
+                        <img src = "Monopoly.png" alt = "Monopoly PS1 Game" class = "productImage">
+                        <h2 class = "price">$19.90</h2>
+                        <table>
+                            <tr>
+                                <th>1</th>
+                                <th>
+                                    <i class = "fa-solid fa-angle-down"></i>
+                                </th>
+                            </tr>
+                        </table>
+                        <button class = "remove">Remove</button>
+                    </article>
+                    <article class = "product">
+                        <h2 class = "productName">Chessmaster II PS1 Game</h2>
+                        <img src = "Chessmaster.png" alt = "Chessmaster II PS1 Game" class = "productImage">
+                        <h2 class = "price">$29.90</h2>
+                        <table>
+                            <tr>
+                                <th>1</th>
+                                <th>
+                                    <i class = "fa-solid fa-angle-down"></i>
+                                </th>
+                            </tr>
+                        </table>
+                        <button class = "remove">Remove</button>
+                    </article>
+                </section>
+                
+                <!--Language Icon on every page-->
+                <button>
+                    <img src = "LanguageIcon.png" alt = "Language" class = "languageIcon">
+                </button>
+            </section>
 
-            
+            <!--Checkout Page-->
+            <section id = "checkoutPage">
+                
+                <section class = "bannerTitle">
+                    <span class = "pageTitle">
+                        <i class = "fa-solid fa-angle-left"></i>
+                        <h1>CHECKOUT</h1>
+                    </span>
+                </section>
+                
+                <!--form to fill in for checkout, personal & delivery info on top of one another, payment info to right-->
+                <section class = "checkoutInfo">
+                    <section class = "personalDelivery">
+                        <h2 class = formh2>Personal details</h2>
+                        <form>
+                            <label for = "fullName">Full Name</label><br>
+                            <input type = "text" id = "fullName" name = "fullName"><br>
+                            <label for = "email">Email</label><br>
+                            <input type = "text" id = "email" name = "email">
+                        </form>
+                        <h2 class = formh2>Delivery Details</h2>
+                        <form>
+                            <label for = "deliveryName">Name</label><br>
+                            <input type = "text" id = "deliveryName" name = "deliveryName"><br>
+                            <label for = "address">Address</label><br>
+                            <input type = "text" id = "address" name = "address"><br>
+                            <label for = "postcode">Postcode</label><br>
+                            <input type = "text" id = "postcode" name = "postcode">
+                        </form>
+                    </section>
+                    <section class = "payment">
+                        <h2 class = "formh2">Payment</h2>
+                        <form>
+                            <label for = "cardName">Name on card</label><br>
+                            <input type = "text" id = "cardName" name = "cardName"><br>
+                            <label for = "cardNumber">Card Number</label><br>
+                            <input type = "text" id = "cardNumber" name = "cardNumber"><br>
+                            <label for = "expiry">Expiry</label><br>
+                            <input type = "text" id = "expiry" name = "expiry"><br>
+                            <label for = "ccv">CCV</label><br>
+                            <input type = "text" id = "ccv" name = "cvv">
+                        </form>
+
+                        <section class = "cartPrice">
+                            <span class = "total">
+                                <h2>Total: $49.80</h2>
+                            </span>
+                            <button class = "checkout">
+                                <h2>Checkout</h2>
+                            </button>
+                        </section>
+                    </section>
+                </section>
+
+                <!--Language Icon on every page-->
+                <button>
+                    <img src = "LanguageIcon.png" alt = "Language" class = "languageIcon">
+                </button>
+            </section>
+
+            <section id = "confirmation">
+                <section id = "grid">
+                    <section id = "confirmationBackground">
+                        <div class = "tick">
+                            <i class = "fa-solid fa-check"></i>
+                        </div>
+                        <div class = "success">
+                            <p>Checkout Successful!</p>
+                            <p>#10933920</p>
+                        </div>
+                    </section>
+                    <button class = "continueShopping">Continue Shopping</button>
+                </section>
+
+                <!--Language Icon on every page-->
+                <button>
+                    <img src = "LanguageIcon.png" alt = "Language" class = "languageIcon">
+                </button>
             </section>
         
         </main>

@@ -1,24 +1,241 @@
-.reviewBar {
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    /* to ensure the navigation bar does not cover content */
+    padding-top: 54px;
+}
+
+/* nav bar */
+#navBar {
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
-    font-family: "Ariel", sans-serif;
-    box-shadow: 0 4px 8px -4px rgba(0,0,0,0.3);
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    background-color: #fafcff;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+
+.logoContainer {
+    width: 300px;
+    margin-right: 70px;
+}
+
+.logo {
+    width: 350px;
+    height: auto;
+}
+
+.searchBar {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.searchBarArea {
+    background-color: #fafcff;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-left: 0px;
+    width: 450px;
+    border: 1.1px solid #333333;
+    padding: 5px;
+    border-radius: 9px;
+    margin-right: auto;
+}
+
+.searchBarArea input {
+    width: 100%;
+    justify-self: flex-start;
+    padding: 0px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    
+}
+
+.searchMenuIcons {
+    display: flex;
+    justify-content: center;
+}
+
+
+.searchMenuIcons button {
+    background-color: #fafcff;
+    border: none;
+    padding: 2px;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+
+.loginCart {
+    justify-self: flex-end;
+    display: flex;
+    justify-content: center;
+    margin-right: 1%;
+    position: relative;
+}
+
+.loginCart button {
+    background-color: #fafcff;
+    border: none;
+    padding: 2px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.loginCart a {
+    background-color: #fafcff;
+    color:#333333;
+    border: none;
+    padding: 2px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+/* category bar */
+
+.categoryBar {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    flex-wrap: nowrap;
+    z-index: 1000;
+}
+
+.categoryBar .categories {
+    width: 100%;
+    background-color: #FFE0FD;
+    border: 2px solid #ff7cf6;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.categories {
+    margin: -1px;
+}
+
+.categories button {
+    background-color: #FFE0FD;
+    color:#333333;
+    border: none;
+    padding: none;
+    cursor: pointer;
+    font-size: 20px;
+    text-decoration: none;
+    margin-bottom: 1px;
+}
+
+
+/* banner image */
+
+#bannerImage {
+    width: 100%;
+}
+
+.banner {
+    width: 100%;
+}
+
+/* best sellers */
+.bestSellers {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.featuredProducts {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.featuredProduct {
+    /* padding: 20px; */
+    max-width: 300px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.featuredProductImage {
+    width: 90%;
+    height: auto;
+    border: 4px solid #0003FD;
+    border-radius: 9px;
+}
+
+.productName {
+    font-size: 1.5em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 10px 0;
+}
+
+.price {
+    color: #333333;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 10px 0;
+}
+
+.add {
+    border: 2px solid #333333;
+    background-color: #0003FD;
+    border-radius: 9px;
+    color: #fafcff;
+    padding: 10px 20px;
+    cursor: pointer;
+   
+}
+
+.add:hover {
+    background-color: #fafcff;
+    color: #0003FD;
+}
+
+.add:focus {
+    background-color: #fafcff;
+    color: #0003FD;
+}
+
+.add:active {
+    background-color: #fafcff;
+    color: #0003FD;
+}
+
+/* review bar */
+.reviewBar {
+    background-color: #ff7cf6;
+    border: 2px solid #333333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .reviewBar ul {
+    background-color: #fafcff;
     display: flex;
     list-style: none;
-    margin: 0;
-    /* animation for 40s, infinite and constant speed*/
+    margin: 10px;
+    /* animation for 25s, infinite and constant speed*/
     animation: scroll 25s infinite linear;
 }
 
 .reviewBar ul li {
     /* set so reviews do not wrap and on single line*/
     white-space: nowrap;
-    padding: 10px 24px;
+    padding: 0px;
     color: #494949;
     position: relative;
 }
@@ -31,6 +248,141 @@
         transform: translateX(-127%)
     }
 }
+
+/* top collections */
+.topCollections {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    background-color: #FFE0FD;
+    padding: 0;
+    margin: 0;
+}
+
+.topCollectionsTitle {
+    text-align: center;
+    margin: 0;
+}
+
+.topCollection {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+.collection{
+    max-width: 300px;
+    text-align: center;
+    border: 4px solid #ff7cf6;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+/* language icon */
+
+.languageIconButton{
+    background-color: transparent;
+    border: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    padding: 5px;
+    z-index: 1000;
+}
+
+.languageIconButton img.languageIcon {
+    width: 30px;
+    height: auto;
+}
+
+
+/* carousel */
+.carousel {
+    position: relative;
+    height: 600px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.monopolyImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carouselContainer {
+    height: 100%;
+    position: relative;
+}
+
+.carouselList {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.carouselSlide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.buttonCarousel {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.buttonCarouselLeft {
+    left: -50px;
+}
+
+.buttonCarouselRight {
+    right: -50px;
+}
+
+.buttonCarousel i {
+    font-size: 50px;
+}
+
+.carouselNavigation {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.indicator {
+    border: 0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: rgba(0, 0, 0, .3);
+    margin: 0 12px;
+}
+
+.indicator.currentSlide {
+    background: rgba(0, 0, 0, 0.75);
+}
+
+#home {
+    display: none;
+}
+
+/* bar */
+
+
+
+
+
+
+
 
 
 
