@@ -1,0 +1,24 @@
+.categories h2 {
+    color: #333333;
+    font-size: 20px;
+    padding: none;
+    margin: 1px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.pageTitle {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 48px;
+    padding: none;
+    color: #333333;
+    margin: 10px;
+}
+
+.topCollectionsTitle {
+    color: #333333;
+    font-size: 48px;
+    padding: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 10px;
+}
