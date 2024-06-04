@@ -1,18 +1,11 @@
-#home {
-    display: none;
-}
-/* #playstationOneGames {
-    display: none;
-} */
-
-body {
-    margin: 0;
-    padding: 0;
-}
 
 main {
     /* to ensure the navigation bar does not cover content */
-    padding-top: 54px;
+    padding-top: 52px;
+}
+
+body {
+    margin: 0;
 }
 
 /* nav bar */
@@ -97,16 +90,6 @@ main {
     font-size: 16px;
 }
 
-.loginCart a {
-    background-color: #fafcff;
-    color:#333333;
-    border: none;
-    padding: 2px;
-    cursor: pointer;
-    font-size: 16px;
-    text-decoration: none;
-}
-
 /* category bar */
 
 .categoryBar {
@@ -158,6 +141,7 @@ main {
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
+    flex-direction: column;
 }
 
 .featuredProducts {
@@ -193,6 +177,37 @@ main {
     margin: 10px 0;
 }
 
+#addID {
+    border: 2px solid #333333;
+    background-color: #0003FD;
+    border-radius: 9px;
+    color: #fafcff;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 25%;
+   
+}
+
+#addID p {
+    margin: 0;
+}
+
+#addID:hover {
+    background-color: #fafcff;
+    color: #0003FD;
+}
+
+#addID:focus {
+    background-color: #fafcff;
+    color: #0003FD;
+}
+
+#addID:active {
+    background-color: #fafcff;
+    color: #0003FD;
+}
+
+
 .add {
     border: 2px solid #333333;
     background-color: #0003FD;
@@ -201,6 +216,10 @@ main {
     padding: 10px 20px;
     cursor: pointer;
    
+}
+
+.add p {
+    margin: 0;
 }
 
 .add:hover {
@@ -237,6 +256,7 @@ main {
     margin: 10px;
     /* animation for 25s, infinite and constant speed*/
     animation: scroll 25s infinite linear;
+    overflow: hidden;
 }
 
 .reviewBar ul li {
@@ -245,6 +265,7 @@ main {
     padding: 0px;
     color: #494949;
     position: relative;
+    overflow: hidden;
 }
 
 @keyframes scroll {
@@ -291,20 +312,14 @@ main {
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
-}
-
-.productResults {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
     gap: 20px;
-}
 
+}
 .product {
     padding: 20px;
-    max-width: 300px;
     text-align: center;
     padding-bottom: 20px;
+    width: 25%;
 }
 
 .productImage {
@@ -312,6 +327,7 @@ main {
     height: auto;
     border: 4px solid #0003FD;
     border-radius: 9px;
+    cursor: pointer;
 }
 
 .productName {
@@ -370,6 +386,8 @@ main {
     border: 2px solid #ff7cf6;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     justify-content: center;
 }
@@ -418,6 +436,7 @@ main {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    flex: 1;
     gap: 20px;
     padding-bottom: 20px;
 }
@@ -427,6 +446,7 @@ main {
     border: 4px solid #ff7cf6;
     border-radius: 9px;
     cursor: pointer;
+    flex: 1;
 }
 
 /* language icon */
@@ -502,6 +522,7 @@ main {
     justify-content: space-between;
     align-items: center; 
     flex-direction: column;
+    overflow: hidden;
 }
 
 .priceInfo {
@@ -516,7 +537,7 @@ main {
     align-items: center;
 }
 
-.addProduct {
+#addProduct {
     border: 2px solid #333333;
     background-color: #0003FD;
     border-radius: 9px;
@@ -526,17 +547,17 @@ main {
    
 }
 
-.addProduct:hover {
+#addProduct:hover {
     background-color: #fafcff;
     color: #0003FD;
 }
 
-.addProduct:focus {
+#addProduct:focus {
     background-color: #fafcff;
     color: #0003FD;
 }
 
-.addProduct:active {
+#addProduct:active {
     background-color: #fafcff;
     color: #0003FD;
 }
@@ -553,6 +574,15 @@ main {
 .numberProducts th.arrow {
     border: 2px solid #333333;
     background-color: #0003FD;
+    border-radius: 9px;
+    color: #fafcff;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.numberProducts th.arrow {
+    border: 2px solid #333333;
+    background-color: #5b5df1;
     border-radius: 9px;
     color: #fafcff;
     padding: 10px 20px;
@@ -708,6 +738,15 @@ main {
     cursor: pointer;
 }
 
+.checkout:hover {
+    border: 2px solid #333333;
+    color: #333333;
+    background-color: #b7f6b0;
+    border-radius: 9px;
+    width: 20%;
+    cursor: pointer;
+}
+
 .cartProducts {
     display: flex;
     justify-content: center;
@@ -757,6 +796,15 @@ main {
     cursor: pointer;
 }
 
+.numberProducts th.arrow:hover {
+    border: 2px solid #333333;
+    background-color: #5b5df1;
+    border-radius: 9px;
+    color: #fafcff;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
 .cartProducts.product {
     display: flex;
     justify-content: center;
@@ -778,6 +826,7 @@ main {
     justify-content: center;
     border: 2px solid #333333;
     border-radius: 9px;
+    margin-bottom: 10%;
 }
 
 /* checkout */
@@ -815,7 +864,7 @@ main {
 }
 
 #checkoutPage {
-    background-color: #f4e6e6;
+    background-color: #FFE0FD;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -829,8 +878,10 @@ main {
     border: 2px solid #333333;
     border-radius: 9px;
     padding: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 input[type=text] {
@@ -872,6 +923,17 @@ input[type=text] {
     margin: 2px;
 }
 
+.checkoutCheckout:hover {
+    background-color: #b7f6b0;
+    border: 2px solid #333333;
+    color: #333333;
+    border-radius: 9px;
+    width: 50%;
+    cursor: pointer;
+    height: 15%;
+    margin: 2px;
+}
+
 /* confirmation */
 #confirmation {
     background-color: #f4e6e6;
@@ -879,6 +941,7 @@ input[type=text] {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 #grid {
@@ -935,9 +998,29 @@ input[type=text] {
     cursor: pointer;
     height: 15%;
     margin: 10px;
+}
+
+/* #home {
+    display: none;
+} */
+
+#playstationOneGames {
+    display: none;
+}
 
 
+#monopolyPage {
+    display: none;
+}
 
+#cart {
+    display: none;
+}
+#checkoutPage {
+    display: none;
+}
+#confirmation {
+    display: none;
 }
 
 

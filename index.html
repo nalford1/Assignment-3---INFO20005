@@ -14,7 +14,7 @@
         <header>
             <nav id = "navBar">
                 <!--Logo in the top left corner-->
-                <div class = "logoContainer">
+                <div class = "logoContainer" onclick = "toHome()">
                     <a href = "#home"><img src = "GWP-Logo.png" alt = "Logo" class = "logo"></a>
                 </div>
                 
@@ -22,9 +22,9 @@
                 <section class = "searchBarArea">
                     <input type = "text" name = "searchBar" placeholder = "Search..." class = "searchBar">
                     <section class = "searchMenuIcons">
-                        <a href = "#playstationOneGames" class = "searchButton">
+                        <button id = "searchButton" onclick = "toPS1Listing()">
                             <i class = "fa-solid fa-magnifying-glass"></i>
-                        </a>
+                        </button>
                         <button class = "menuButton">
                             <i class = "fa-solid fa-bars"></i>
                         </button>
@@ -33,13 +33,11 @@
 
                 <!--Top right with login and cart buttons-->
                 <section class = "loginCart">
-                    <button class = "loginButton">
+                    <button id = "loginButton">
                         <i class = "fa-regular fa-user"></i>
                     </button>
-                    <button class = "cartButton">
-                        <a href = "cart">
-                            <i class = "fa-solid fa-cart-shopping"></i>
-                        </a>
+                    <button id = "cartButton" onclick = "toCart()">
+                        <i class = "fa-solid fa-cart-shopping"></i>
                     </button>
                 </section>
             </nav>
@@ -155,7 +153,7 @@
                 <!--6 Products Results listed-->
                 <section class = "productResults">
                     <article class = "product">
-                        <img src = "Monopoly.png" alt = "Monopoly PlayStation 1 Game" class = "productImage">
+                        <img src = "Monopoly.png" alt = "Monopoly PlayStation 1 Game" class = "productImage" onclick="toMonopolyPage()">
                         <h2 class = "productName">Monopoly PlayStation 1 Game</h2>
                         <h2 class = "price">$19.90</h2>
                         <button class = "add">Add to cart</button>
@@ -164,7 +162,9 @@
                         <img src = "Chessmaster.png" alt = "Chessmaster II PS1 Game" class = "productImage">
                         <h2 class = "productName">Chessmaster II PS1 Game</h2>
                         <h2 class = "price">$29.90</h2>
-                        <button class = "add">Add to cart</button>
+                        <button id = "addID" onclick="added()">
+                            <p id = "addToCartID">Add to cart</p>
+                        </button>
                     </article>
                     <article class = "product">
                         <img src = "StuartLittle.png" alt = "Stuart Little 2 PlayStation 1 Game" class = "productImage">
@@ -271,7 +271,7 @@
                         <!--Price information-->
                         <section class = "priceInfo">
                             <h2 class = "price">$149.90</h2>
-                            <button class = "addProduct">Add to cart</button>
+                            <button id = "addProduct" onclick = "addedProduct()" >Add to cart</button>
                             <table class = "numberProducts">
                                 <tr>
                                     <th class = "number">1</th>
@@ -349,7 +349,7 @@
                         <span class = "total">
                             <h2>Total: $49.80</h2>
                         </span>
-                        <button class = "checkout">
+                        <button class = "checkout" onclick = "toCheckout()">
                             <h2>Checkout</h2>
                         </button>
                     </section>
@@ -370,8 +370,8 @@
                             <button class = "remove">Remove</button>
                         </article>
                         <article class = "product">
-                            <h2 class = "productName">Chessmaster II PS1 Game</h2>
-                            <img src = "Chessmaster.png" alt = "Chessmaster II PS1 Game" class = "productImage">
+                            <h2 class = "productName">Chessmaster II PlayStation 1 Game</h2>
+                            <img src = "Chessmaster.png" alt = "Chessmaster II PlayStation 1 Game" class = "productImage">
                             <h2 class = "price">$29.90</h2>
                             <table class = "numberProducts">
                                 <tr>
@@ -434,7 +434,7 @@
                             <span class = "totalCheckout">
                                 <h2>Total: $49.80</h2>
                             </span>
-                            <button class = "checkoutCheckout">
+                            <button class = "checkoutCheckout" onclick = "toConfirmation()">
                                 <h2>Checkout</h2>
                             </button>
                         </section>
@@ -453,7 +453,7 @@
                             <p>#10933920</p>
                         </div>
                     </section>
-                    <button class = "continueShopping">Continue Shopping</button>
+                    <button class = "continueShopping" onclick = "toHome()">Continue Shopping</button>
                 </section>
             </section>
 
