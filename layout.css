@@ -1,3 +1,10 @@
+#home {
+    display: none;
+}
+/* #playstationOneGames {
+    display: none;
+} */
+
 body {
     margin: 0;
     padding: 0;
@@ -249,6 +256,147 @@ main {
     }
 }
 
+/* search results */
+.searchResults {
+    background-image: url(GWP-Grid.png);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.searchTitle {
+    display: flex;
+    background-color: #FFE0FD;
+    border: 2px solid #ff7cf6;
+    border-radius: 9px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.searchTitle i {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.backText {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* playstation 1 games */
+.productResults {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.productResults {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product {
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.productImage {
+    width: 90%;
+    height: auto;
+    border: 4px solid #0003FD;
+    border-radius: 9px;
+}
+
+.productName {
+    font-size: 1.5em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 10px 0;
+}
+
+.price {
+    color: #333333;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 10px 0;
+}
+
+.add {
+    border: 2px solid #333333;
+    background-color: #0003FD;
+    border-radius: 9px;
+    color: #fafcff;
+    padding: 10px 20px;
+    cursor: pointer;
+   
+}
+
+.add:hover {
+    background-color: #fafcff;
+    color: #0003FD;
+}
+
+.add:focus {
+    background-color: #fafcff;
+    color: #0003FD;
+}
+
+.add:active {
+    background-color: #fafcff;
+    color: #0003FD;
+}
+
+.more{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    z-index: 1000;
+}
+
+.more i {
+    font-size: 24px;
+}
+
+/* Related Products */
+.relatedProducts {
+    background-color: #FFE0FD;
+    color: #333333;
+    border: 2px solid #ff7cf6;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.relatedProductArticles {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.relatedProduct {
+    /* padding: 20px; */
+    max-width: 300px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.relatedProductImage {
+    width: 90%;
+    height: auto;
+    border: 4px solid #0003FD;
+    border-radius: 9px;
+}
+
+
+
 /* top collections */
 .topCollections {
     display: flex;
@@ -297,6 +445,124 @@ main {
 .languageIconButton img.languageIcon {
     width: 30px;
     height: auto;
+}
+/* Monopoly Game */
+#monopolyPage {
+    background-image: url(GWP-Grid.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.monopolyCell {
+    background-color: #fafcff;
+    width: 70%;
+    justify-content: center;
+    border: 2px solid #333333;
+    border-radius: 9px;
+    margin-bottom: 20px;
+}
+.bannerTitle {
+    background-image: url(GWP-Grid.png);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.monopolyPageTitle {
+    display: flex;
+    background-color: #ff7cf6;
+    border: 2px solid #333333;
+    border-radius: 9px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.monopolyPageTitle i {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.monopolyContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px;
+}
+
+.Reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; 
+    flex-direction: column;
+}
+
+.priceInfo {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.seeMore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addProduct {
+    border: 2px solid #333333;
+    background-color: #0003FD;
+    border-radius: 9px;
+    color: #fafcff;
+    padding: 10px 20px;
+    cursor: pointer;
+   
+}
+
+.addProduct:hover {
+    background-color: #fafcff;
+    color: #0003FD;
+}
+
+.addProduct:focus {
+    background-color: #fafcff;
+    color: #0003FD;
+}
+
+.addProduct:active {
+    background-color: #fafcff;
+    color: #0003FD;
+}
+
+.numberProducts th.number {
+    border: 2px solid #333333;
+    background-color: #fafcff;
+    border-radius: 9px;
+    color: #0003FD;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.numberProducts th.arrow {
+    border: 2px solid #333333;
+    background-color: #0003FD;
+    border-radius: 9px;
+    color: #fafcff;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.starRating {
+    border: 2px solid #333333;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 
@@ -371,11 +637,312 @@ main {
     background: rgba(0, 0, 0, 0.75);
 }
 
-#home {
-    display: none;
+.bannerTitle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.pageTitle {
+    display: flex;
+    border-radius: 9px;
+    align-items: center;
+    margin: 5px;
+    padding: 0;
 }
 
-/* bar */
+.pageTitle i {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.pageCartTitle {
+    display: flex;
+    background-color: #ff7cf6;
+    border: 2px solid #333333;
+    border-radius: 9px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.pageCartTitle h1 {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.pageCartTitle i {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    justify-self: flex-start;
+}
+
+.cartPrice {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    gap: 2px;
+}
+
+.total {
+    border: 2px solid #333333;
+    color: #0003FD;
+    border-radius: 9px;
+    width: 20%;
+    text-align: center;
+}
+
+.checkout {
+    border: 2px solid #333333;
+    color: #333333;
+    background-color: #71F262;
+    border-radius: 9px;
+    width: 20%;
+    cursor: pointer;
+}
+
+.cartProducts {
+    display: flex;
+    justify-content: center;
+}
+
+.remove {
+    border: 2px solid #333333;
+    background-color: #FFD3D3;
+    border-radius: 9px;
+    color: #333333;
+    padding: 10px 20px;
+    cursor: pointer;
+   
+}
+
+.remove:hover {
+    background-color: #f4e6e6;
+    color: #333333;
+}
+
+.remove:focus {
+    background-color: #f4e6e6;
+    color: #333333;
+}
+
+
+.numberProducts th.number {
+    border: 2px solid #333333;
+    background-color: #fafcff;
+    border-radius: 9px;
+    color: #0003FD;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.numberProducts {
+    display: flex;
+    justify-content: center;
+}
+
+.numberProducts th.arrow {
+    border: 2px solid #333333;
+    background-color: #0003FD;
+    border-radius: 9px;
+    color: #fafcff;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.cartProducts.product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#cart {
+    background-image: url(GWP-Grid.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartBackground {
+    background-color: #fafcff;
+    width: 70%;
+    justify-content: center;
+    border: 2px solid #333333;
+    border-radius: 9px;
+}
+
+/* checkout */
+.checkoutTitle {
+    display: flex;
+    background-color: #ff7cf6;
+    border: 2px solid #333333;
+    border-radius: 9px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.checkoutTitle h1 {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.checkoutTitle i {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    justify-self: flex-start;
+}
+
+.checkoutInfo {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+#checkoutPage {
+    background-color: #f4e6e6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkoutInfo {
+    background-color: #fafcff;
+    width: 80%;
+    justify-content: center;
+    border: 2px solid #333333;
+    border-radius: 9px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+input[type=text] {
+    width: 100%;
+}
+
+.personalDelivery {
+    width: 45%;
+}
+
+.payment {
+    width: 45%;
+}
+
+.cartPrice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.totalCheckout {
+    border: 2px solid #333333;
+    color: #0003FD;
+    border-radius: 9px;
+    width: 50%;
+    text-align: center;
+    height: 15%;
+    margin: 2px;
+}
+
+.checkoutCheckout {
+    border: 2px solid #333333;
+    color: #333333;
+    background-color: #71F262;
+    border-radius: 9px;
+    width: 50%;
+    cursor: pointer;
+    height: 15%;
+    margin: 2px;
+}
+
+/* confirmation */
+#confirmation {
+    background-color: #f4e6e6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#grid {
+    background-image: url(GWP-Grid.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    justify-content: center;
+    border: 2px solid #333333;
+    border-radius: 9px;
+    padding: 10%;
+}
+
+#confirmationBackground {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff7cf6;
+    border: 2px solid #333333;
+    border-radius: 9px;
+    padding: 5%;
+}
+
+.tick {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background-color: #71F262;
+    border: 2px solid #333333;
+    padding: 3px;
+    margin: 3%;
+    text-align: center;
+}
+
+.success {
+    text-align: center;
+    background-color: #FFE0FD;
+    margin: 0;
+    border: 2px solid #333333;
+    border-radius: 9px;
+    padding: 10px;
+}
+
+.continueShopping {
+    border: 2px solid #333333;
+    color: #333333;
+    background-color: #fafcff;
+    border-radius: 9px;
+    width: 30%;
+    cursor: pointer;
+    height: 15%;
+    margin: 10px;
+
+
+
+}
+
+
+
+
 
 
 
